@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <form action="#">
+            <input type="number" id="quantity" placeholder="Select Quantity" min="1"><br><br>
+            <input type="text" id="price" placeholder="Price" value="60"><br><br>
+            <input type="text" id="total" placeholder="Total price"><br><br>
+        </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#quantity").change(function(){
+                x=document.getElementById("quantity").value;
+                y=document.getElementById("price").value;
+                result=x*y
+                document.getElementById("total").value=result;
+            })
+        })
+    </script>
+</body>
+</html>

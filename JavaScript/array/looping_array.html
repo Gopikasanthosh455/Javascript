@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+    <h2>Looping in Arrays</h2>
+    <h3 id="demo"></h3>
+    
+
+    <script>
+        const student =  new Array("arun" ,"Gopika","Devika", "Arshid" ,"Hari","Gokul");
+        let length=student.length;
+        console.log(length)
+
+        let result ="<ul>"
+            for (let i=0; i<length; i++){
+                result += "<li>" + student[i] +"</li>";
+            }
+            document.getElementById("demo").innerHTML=result
+
+    </script>
+</body>
+</html>

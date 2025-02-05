@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let physics = 95;
+        let chemistry = 88;
+        let maths = 94;
+        let english = 99;
+        let malayalam = 100;
+        let science = 90;
+        let social = 91;
+
+        let totalScore = physics + chemistry + maths + english + malayalam + science + social;
+    
+        let averageScore = totalScore / 7;
+    
+        console.log("Total Score: " + totalScore);
+        console.log("Average Score: " + averageScore); 
+        
+        if (averageScore >= 90) {
+            console.log("Grade A");
+        } else if (averageScore >= 80) {
+            console.log("Grade B");
+        } else if (averageScore >= 70) {
+            console.log("Grade C");
+        } else if (averageScore >= 60) {
+            console.log("Grade D");
+        } else {
+            console.log("Grade F");
+        }
+    </script>
+    
+</body>
+</html>

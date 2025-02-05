@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript objects Datatypes</h1>
+    <h3 id="name"></h3>
+    <h3 id="age"></h3>
+    <h3 id="Company"></h3>
+    <h3 id="salary"></h3>
+    <h3 id="Place"></h3>
+
+    <script>
+        const employee ={
+            name:"Gopika",
+            age:21,
+            company:"Amazon",
+            Salary:45000,
+            Place:"Banglore"
+        };
+        document.write(employee.name)
+        document.getElementById("name").innerHTML="Employee Name :" +employee.name;
+        document.getElementById("age").innerHTML="Employee Age:" +employee.age;
+        document.getElementById("Company").innerHTML="Employee company :" +employee.company;
+        document.getElementById("salary").innerHTML="Employee salary :" +employee.Salary;
+        document.getElementById("Place").innerHTML="Employee Place :" +employee.Place;
+    </script>
+</body>
+</html>

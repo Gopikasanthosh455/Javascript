@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+      function findLCM(num1,num2) {
+        let greater=num1
+        if (num1>num2){
+         greater = num2 
+        } 
+    
+        while (true) {
+            if (greater % num1 === 0 && greater % num2 === 0) {
+                LCM = greater;
+                break;
+            }
+            greater+=1; 
+        }
+        return LCM
+}
+
+    let x = prompt("Enter First number");
+    let num1 = parseInt(x);
+
+    let y = prompt("Enter Second number");
+    let num2 = parseInt(y);
+
+    document.getElementById("demo").innerHTML="LCM = "+findLCM(num1,num2)
+
+
+
+   
+
+    </script>
+</body>
+</html>

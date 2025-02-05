@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="length"></h1>
+    <h1 id="index"></h1>
+    <h1 id="index2"></h1>
+    <h1 id="searching"></h1>
+
+    <script>
+        let x="Welcome to luminar technolab"
+        document.getElementById("length").innerHTML="length of the given string is : " + x.length;
+
+        let index=x.indexOf("to")
+        document.getElementById("index").innerHTML=index;
+
+        let last=x.lastIndexOf("to")
+        document.getElementById("index").innerHTML=last;
+
+        let result=x.search("luminar")
+        document.getElementById("searching").innerHTML=result;
+    </script>
+</body>
+</html>

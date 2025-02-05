@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click here</button>
+     <div class="div1"></div> 
+     <div class="div2"></div>
+     <div class="div3"></div>  
+     
+     <style>
+        .div1{
+          width: 300px;
+          height: 200px;
+          background-color: blueviolet;
+          margin-top: 30px;
+        }
+        .div2{
+          width: 300px;
+          height: 200px;
+          background-color: rgb(128, 21, 74);
+          margin-top: 30px;
+        }
+        .div3{
+          width: 300px;
+          height: 200px;
+          background-color: rgb(102, 22, 22);
+          margin-top: 30px;
+        }
+     </style>
+
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".div1").fadeToggle(1000);
+                $(".div2").fadeToggle(2000);
+                $(".div3").fadeToggle(3000);
+            })
+        })
+     </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="HCF"></h1>
+    <script>
+        function findHCF(a, b) {
+            if (x<y){
+                smallest=x
+
+            }
+            else {
+                smallest = y
+            }
+            for (let i=1; i<= smallest; i++){
+                if(x%i == 0 & y%i==0){
+                    hcf = i
+                }
+            }
+            return hcf
+
+        }
+        let x = prompt("Enter First number");
+        let num1 = parseInt(x);
+        let y = prompt("Enter Second number");
+        let num2 = parseInt(y);
+        document.getElementById("HCF").innerHTML="HCF = "+findHCF(num1,num2)
+    
+
+    </script>
+</body>

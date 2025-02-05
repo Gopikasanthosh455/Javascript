@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        const student = new Map([
+            ["Name","Gopika"],
+            ["Age",21],
+            ["Place","Guruvayoor"],
+            ["Course","Python"]
+        ])
+        console.log(student);
+
+        a="";
+        for (const i of student.values()){
+            a+=i +"<br>";
+        }
+        document.getElementById("demo").innerHTML=a;
+    </script>
+</body>
+</html>

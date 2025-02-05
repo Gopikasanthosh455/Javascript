@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Orderd list</h1>
+    <h2  id="emp" ></h2>
+
+    <script>
+        const employee =new Array("Achu" ,"Ammu" ,"Anu" ,"Devu" ,"Gopu" ,"Appu")
+        let length =employee.length;
+
+        let result ="<ol>";
+            for (let i=0;i<length;i++){
+                result+="<li>" +employee[i] +"</li>";
+            }
+
+            document.getElementById("emp").innerHTML=result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=20;
+    
+        if (number <= 1){
+            document.write(number + " is not a prime number.");
+        }else{
+            let Prime=true;
+            for (let i = 2; i < number; i++){
+                if (number % i === 0){
+                    document.write(number + " is not a prime number.");
+                    Prime = false;
+                    break;
+                }
+            }
+            if(Prime) {
+                document.write(number + " is a prime number.");
+            }
+        }
+    </script>
+</body>
+</html>

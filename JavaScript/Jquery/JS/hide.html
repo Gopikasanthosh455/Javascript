@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="hide">Click here to hide</button>
+    <button class="show">Click here to show</button>
+    <h1 class="demo">Introduction to JQuery</h1>
+    <h1 id="demo">Welcome</h1>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $(".demo").hide()
+            })
+            $(".show").click(function(){
+                $(".demo").show()
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Digits</title>
+</head>
+<body>
+    <h2 id="result">Number of digits will be displayed here</h2>
+
+    <script>
+      function countDigits(num) {
+        return Math.abs(num).toString().length;  // Convert to absolute value and count digits
+      }
+
+      let x = prompt("Enter an integer:");
+      let num = parseInt(x) || 0; // If input is invalid, default to 0
+
+      let digitCount = countDigits(num);
+      document.getElementById("result").innerHTML = "Number of digits = " + digitCount;
+    </script>
+</body>
+</html>
