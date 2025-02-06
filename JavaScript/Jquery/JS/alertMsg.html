@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>JavaScript for validation</h1>
+        <form action="#" name="myform" onsubmit="newFunction()">
+            <input type="text" placeholder="Name" name="name"><br><br>
+            <input type="text" placeholder="place" name="place"><br><br>
+            <input type="number" placeholder="phone" name="phone"><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script>
+        function newFunction(){
+            a=document.myform.name.value;
+            b=document.myform.place.value;
+            c=document.myform.phone.value;
+            if(a==""||a==null){
+                alert("Name can not be null or Blank")
+            }
+            else if(b=="" || b==null){
+                alert("Place can not be null or blank")
+            }
+            else if(c==""){
+                alert("Number can not be null")
+            }
+            else if(c.length !=10){
+                alert("Invalid Mobile number")
+
+            }
+        }
+    </script>
+</body>
+</html>
